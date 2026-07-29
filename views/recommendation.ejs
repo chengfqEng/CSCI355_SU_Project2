@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contact </title>
+    <link rel = "stylesheet" href="/stylesheets/style.css">
+</head>
+
+<!-- Following structure of class codes -->
+<!-- Referenceing using the "Book" example -->
+<body>
+    <%- include ('projectHeader') %>
+
+
+<ol class ="recommencom" >    
+<h1 class = "vacationlist">Here is the following top 5 vacation sites as of 2026:</h1>
+    <% vacationspots.forEach(vacationspot => { %>
+
+        <li class="vPlaces">
+            <div class="places"><%= vacationspot.place %></div>
+            <div class="reason">Reason:<%= vacationspot.reason %></div>
+        </li>
+
+    <% }) %>
+    </ol>
+
+<%- include ('projectfooter') %>
+</body>
+</html>

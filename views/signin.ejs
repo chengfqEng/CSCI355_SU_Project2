@@ -1,0 +1,29 @@
+
+<!-- Following structure of class codes -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel = "stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+      <%- include ('projectHeader') %>
+    <div class="signincom">
+            <form method="POST" action="/users/signin/submit" class="signup_form">
+                <div class="form_header">
+                    <h1 class="signinsign">Sign in</h1>
+                    <p>Don't have an account? <a href="/signup">Sign up</a></p>
+                </div>
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email">
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password">
+                <input type="submit" value="Sign in" class ="submitsign">
+            </form>         
+        </div>
+<%- include ('projectfooter') %>
+</body>
+</html>
