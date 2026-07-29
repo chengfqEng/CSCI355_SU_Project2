@@ -148,7 +148,16 @@ label{
     border: 5px solid black;
     background-color:#8ecae6;
 }
-
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: left;
+    width: 500px;
+    margin: auto;
+    border: 5px solid black;
+    background-color:#8ecae6;
+}
 
 
 
